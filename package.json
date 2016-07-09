@@ -1,0 +1,31 @@
+{
+  "name": "jsonp",
+  "version": "1.0.0",
+  "description": "frontend liteweight jsonp library base on promise",
+  "main": "jsonp.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "npm install && mocha-phantomjs -R dot ./test/runner.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/IskenHuang/jsonp.git"
+  },
+  "keywords": [
+    "jsonp"
+  ],
+  "author": "Isken Huang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IskenHuang/jsonp/issues"
+  },
+  "homepage": "https://github.com/IskenHuang/jsonp#readme",
+  "devDependencies": {
+    "bluebird": "^3.4.1",
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3",
+    "mocha-phantomjs": "^4.1.0"
+  }
+}
