@@ -1,5 +1,5 @@
 # jsonp
-jsonp api base on Promise api. Default export the api to window.jsonp. the api format all the same with [fetch])(https://fetch.spec.whatwg.org/) api. This api ie8 supported.
+jsonp api base on Promise api. Default export the api to window.jsonp. the api format all the same with [fetch](https://fetch.spec.whatwg.org/) api. This api ie8 supported.
 
 ## api format
 | name | format | default | description |
