@@ -74,6 +74,11 @@
             var callbackFunction = options.callback || generateCallbackFunction(),
                 scriptId = jsonpCallback + '_' + callbackFunction
 
+            // sometime callback name including window(direct exec script) handle this case
+            if(callbackFunction.indexOf('window["') >= 0) {
+                callbackFunction = callbackFunction.replace(/^window\[\"|\"\]$/g, '')
+            }
+
             if(self[callbackFunction]) {
                 if (timeoutId) clearTimeout(timeoutId)
 

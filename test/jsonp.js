@@ -169,4 +169,14 @@ describe('JSONP', function() {
                 done()
             })
     })
+
+    it('should be support callback with window case', function(done) {
+        fetch('./callback-window.jsonp', {
+                method: 'jsonp',
+                callback: 'window["a_a_a,b-b-b,c.c.c,ddd"]',
+            }).then(function(res) {
+                expect(res.ok).equal(true)
+                done()
+            })
+    })
 })
